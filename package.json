@@ -1,0 +1,48 @@
+{
+  "name": "node_ts_koa",
+  "version": "1.0.0",
+  "description": "Node Koa Typescript dependency injection - Project boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "build:watch": "rm -rf dist && tsc -w",
+    "clean": "rm -rf node_modules coverage dist .nyc_output",
+    "coverage": "nyc --exclude dist/test --reporter=html npm run test:all",
+    "lint": "tslint 'src/**/*.ts' 'test/**/*.test.ts'",
+    "start": "node dist/index.js",
+    "start:dev": "tsc-watch --onSuccess 'node --inspect=0.0.0.0:5858 dist/index.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paperlapap78/node_ts_koa.git"
+  },
+  "keywords": [
+    "node",
+    "typescript",
+    "koa",
+    "backend"
+  ],
+  "author": "Dennis Probst",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/paperlapap78/node_ts_koa/issues"
+  },
+  "homepage": "https://github.com/paperlapap78/node_ts_koa#readme",
+  "dependencies": {
+    "koa": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/node": "^12.0.2",
+    "nyc": "^14.1.1",
+    "prettier": "^1.17.1",
+    "ts-node": "^8.1.0",
+    "tsc": "^1.20150623.0",
+    "tsc-watch": "^2.2.1",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.4.5"
+  }
+}
