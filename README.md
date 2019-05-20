@@ -21,12 +21,18 @@ see [http://inversify.io/](http://inversify.io/)
 ### tsc-watch
 Server auto-restarts when code changes
 
+#### Usage
+```typescript
+npm start:dev
+```
+
 ### Class validator
-Decorator based entities valiedation
+Decorator based entities validation
 
 ### Pino logger
+[getpino.io](http://getpino.io/#/)
 
-### Unit testing with Jest
+### Testing with Jest
 [jestjs.io](https://jestjs.io/en/)
 Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 
@@ -42,9 +48,18 @@ npm run test:integration
 npm run test:all
 ```
 
-### Test coverage
+### Test coverage with Jest
+
+```typescript
+# Run all tests outputs coverage
+npm run test:all
+```
 
 ### tslint
+```typescript
+# Lint your TypeScript code
+npm run lint
+```
 
 ### ts-node
 TypeScript execution and REPL for node.js, with source map support
