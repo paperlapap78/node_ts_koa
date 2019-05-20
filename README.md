@@ -27,6 +27,20 @@ Decorator based entities valiedation
 ### Pino logger
 
 ### Unit testing with Jest
+[jestjs.io](https://jestjs.io/en/)
+Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
+
+#### Usage
+```typescript
+# Run unit tests
+npm t
+
+# Run integration test
+npm run test:integration
+
+# Run all test
+npm run test:all
+```
 
 ### Test coverage
 
